@@ -13,7 +13,7 @@
   Robin  Plantey
 
 
-  | Robin Plantey
+  | Arxiv alerts
 
 </title>
 <meta name="description" content="Welcome to my personal webpage! I'm Robin Plantey, theoretical physics PhD candidate, learning junkie and passionate about all things technical.
@@ -39,7 +39,7 @@
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📚</text></svg>">
 
 <link rel="stylesheet" href="/assets/css/main.css">
-<link rel="canonical" href="http://localhost:4000/cv/">
+<link rel="canonical" href="http://localhost:4000/projects/arxiv-notif/">
 
 
 <!-- Dark Mode -->
@@ -152,32 +152,36 @@
       <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Robin Plantey</h1>
-    <p class="post-description"></p>
+    <h1 class="post-title">Arxiv alerts</h1>
+    <p class="post-description">A little Python program that allows you to follow authors on arXiv and receive desktop notifications when they submit articles</p>
   </header>
 
   <article>
-    <h2 id="education">Education</h2>
+    <h2 id="arxiv-alerts">Arxiv Alerts?</h2>
+<p>Arxiv Alerts lets you keep track of any authors research. You define a list of authors that you would like to follow and the program will send you a desktop 
+notification whenever they submit a new article on ArXiv. It is a small Python program that I initially wrote to be notified about my friends’ new 
+publications since ArXiv doesn’t have a way to follow individual authors.</p>
 
-<ul>
-  <li>
-<strong>2021-</strong>     : PhD candidate, Norwegian University of Science and Technology</li>
-  <li>
-<strong>2019-2020</strong> : High Energy Physics MSc, École Polytechnique</li>
-  <li>
-<strong>2017-2019</strong> : Theortical Physics MSc, Lund University</li>
-  <li>
-<strong>2014-2017</strong> : Theoretical Physics BSc, Montpellier University</li>
-</ul>
+<h2 id="how-does-it-work">How does it work?</h2>
+<p>For each author in your subscription list, the program does a search on arxiv, parses the results and retrieves information related to any new publications, if 
+there are any since the last check. If there are new articles, it prepares a summary that you can open via a desktop notification.</p>
 
-<h2 id="conferences-and-summer-schools">Conferences and Summer Schools</h2>
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center"><img src="/assets/img/arxivalerts.png" alt="Example of a pretty summary of new publications"></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center"><b>Example of a pretty summary of new publications</b></td>
+    </tr>
+  </tbody>
+</table>
 
-<ul>
-  <li>Multi-Higgs 2022 @Instituto Superior Tecnico, Lisboa (speaker, <a href="/assets/pdf/weinberg3hdm-lisboa.pdf">slides</a>)</li>
-  <li>DISCRETE2021 @Bergen University (speaker, <a href="/assets/pdf/weinberg3hdm.pdf">slides</a>)</li>
-  <li>Nordita Masterclass 2019 @Nordic Institute for Theoretical Physics, Stockholm</li>
-  <li>SIFTS2019 @Insituto de Fisica Teorica, Madrid</li>
-</ul>
+<h2 id="where-can-i-get-it">Where can I get it?</h2>
+<p>You can find the code and documentation 
+<a href="https://github.com/robinplantey/ArxivAlerts" target="_blank" rel="noopener noreferrer">on github</a>.</p>
 
   </article>
 
