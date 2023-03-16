@@ -23,6 +23,10 @@ Let's talk a little about the technology itself
 
 ## **Mifare classic**
 
+## **The MCT Android app**
+
+The Mifare Classic Tools app is a great tool
+
 ## **The Proxmark3**
 
 # **Making a more secure RFID access system with Mifare 1k**
@@ -35,16 +39,19 @@ access system than the ones I've encountered. To do so I used
 - Arduino Uno
 - MFRC522 module (or other 13.56MHz RFID reader/writer)
 
-### **Software**
+### **Arduino libraries**
 
-- Arduino library MFRC522
+- MFRC522: to interact with the RFID reader
+- EDB: to store and query a small database on the Arduino EEPROM (see 
+[example](https://github.com/jwhiddon/EDB/blob/master/examples/EDB_Internal_EEPROM/EDB_Internal_EEPROM.ino))
+
 
 To make things more fun I also used
 
 - LCD screen (with Arduino library ...)
 - Buzzer (with Arduino library ...)
 
-but these are not strictly necessary, and you can just output to the Arduino serial.
+but these are not strictly necessary, you could just output to serial.
 
 ## **Schematics**
 
@@ -53,7 +60,7 @@ but these are not strictly necessary, and you can just output to the Arduino ser
 
 ## **Code**
 
-Here is what I want my reader to do:
+Here is what I would like my reader to do:
 - Check if the tag is block 0 writable, if so deny access
 - Read the UID
 - If the UID is not registered, deny access.
@@ -61,13 +68,19 @@ Here is what I want my reader to do:
 reader.
 - If the data blocks are correct, grant access otherwise deny access.
 
+The first step is very important: it prevents most UID clones (gen1 magic cards and CUID cards) but 1-time writable 
+cards, where block 0 is locked after being written, will go through (FUID cards). See 
+[\[1\]](https://github.com/RfidResearchGroup/proxmark3/blob/master/doc/magic_cards_notes.md#mifare-classic) for a 
+description of the 
+different types of UID-changeable Mifare cards.
 
 In addition all sectors of registered tags should be read/write protected by a custom key *even if they are empty*! 
 Otherwise it 
 is trivial to recover all the keys using the nested attacks implemented on the Proxmark3. Even then, 
 there are attacks (e.g. darkside) which do not require the knowledge of any key but they may not work if the PRNG of 
 the chip is strong enough.
- 
-
 
 ## **Testing with the Proxmark3**
+
+
+# **Conclusion**

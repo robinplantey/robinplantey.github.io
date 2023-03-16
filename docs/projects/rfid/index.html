@@ -175,6 +175,10 @@ surroundings. And so I became curious</p>
 
 <h2 id="mifare-classic"><strong>Mifare classic</strong></h2>
 
+<h2 id="the-mct-android-app"><strong>The MCT Android app</strong></h2>
+
+<p>The Mifare Classic Tools app is a great tool</p>
+
 <h2 id="the-proxmark3"><strong>The Proxmark3</strong></h2>
 
 <h1 id="making-a-more-secure-rfid-access-system-with-mifare-1k"><strong>Making a more secure RFID access system with Mifare 1k</strong></h1>
@@ -189,10 +193,12 @@ access system than the ones I’ve encountered. To do so I used</p>
   <li>MFRC522 module (or other 13.56MHz RFID reader/writer)</li>
 </ul>
 
-<h3 id="software"><strong>Software</strong></h3>
+<h3 id="arduino-libraries"><strong>Arduino libraries</strong></h3>
 
 <ul>
-  <li>Arduino library MFRC522</li>
+  <li>MFRC522: to interact with the RFID reader</li>
+  <li>EDB: to store and query a small database on the Arduino EEPROM (see 
+<a href="https://github.com/jwhiddon/EDB/blob/master/examples/EDB_Internal_EEPROM/EDB_Internal_EEPROM.ino" target="_blank" rel="noopener noreferrer">example</a>)</li>
 </ul>
 
 <p>To make things more fun I also used</p>
@@ -202,7 +208,7 @@ access system than the ones I’ve encountered. To do so I used</p>
   <li>Buzzer (with Arduino library …)</li>
 </ul>
 
-<p>but these are not strictly necessary, and you can just output to the Arduino serial.</p>
+<p>but these are not strictly necessary, you could just output to serial.</p>
 
 <h2 id="schematics"><strong>Schematics</strong></h2>
 
@@ -210,7 +216,7 @@ access system than the ones I’ve encountered. To do so I used</p>
 
 <h2 id="code"><strong>Code</strong></h2>
 
-<p>Here is what I want my reader to do:</p>
+<p>Here is what I would like my reader to do:</p>
 <ul>
   <li>Check if the tag is block 0 writable, if so deny access</li>
   <li>Read the UID</li>
@@ -220,6 +226,12 @@ reader.</li>
   <li>If the data blocks are correct, grant access otherwise deny access.</li>
 </ul>
 
+<p>The first step is very important: it prevents most UID clones (gen1 magic cards and CUID cards) but 1-time writable 
+cards, where block 0 is locked after being written, will go through (FUID cards). See 
+<a href="https://github.com/RfidResearchGroup/proxmark3/blob/master/doc/magic_cards_notes.md#mifare-classic" target="_blank" rel="noopener noreferrer">[1]</a> for a 
+description of the 
+different types of UID-changeable Mifare cards.</p>
+
 <p>In addition all sectors of registered tags should be read/write protected by a custom key <em>even if they are empty</em>! 
 Otherwise it 
 is trivial to recover all the keys using the nested attacks implemented on the Proxmark3. Even then, 
@@ -227,6 +239,8 @@ there are attacks (e.g. darkside) which do not require the knowledge of any key 
 the chip is strong enough.</p>
 
 <h2 id="testing-with-the-proxmark3"><strong>Testing with the Proxmark3</strong></h2>
+
+<h1 id="conclusion"><strong>Conclusion</strong></h1>
 
   </article>
 
