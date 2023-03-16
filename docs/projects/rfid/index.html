@@ -13,7 +13,7 @@
   Robin  Plantey
 
 
-  | Publications
+  | Arduino RFID adventures
 
 </title>
 <meta name="description" content="Welcome to my personal webpage! I'm Robin Plantey, theoretical physics PhD candidate, learning junkie and passionate about all things technical.
@@ -39,7 +39,7 @@
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📚</text></svg>">
 
 <link rel="stylesheet" href="/assets/css/main.css">
-<link rel="canonical" href="http://localhost:4000/publications/">
+<link rel="canonical" href="http://localhost:4000/projects/rfid/">
 
 
 <!-- Dark Mode -->
@@ -97,8 +97,6 @@
           
           
           
-          
-          
           <li class="nav-item ">
               <a class="nav-link" href="/projects/">
                 Projects
@@ -110,11 +108,9 @@
           
           
           
-          <li class="nav-item active">
+          <li class="nav-item ">
               <a class="nav-link" href="/publications/">
                 Publications
-                
-                <span class="sr-only">(current)</span>
                 
               </a>
           </li>
@@ -156,273 +152,81 @@
       <div class="post">
 
   <header class="post-header">
-    <h1 class="post-title">Publications</h1>
-    <p class="post-description"></p>
+    <h1 class="post-title">Arduino RFID adventures</h1>
+    <p class="post-description">Attempting to make a secure RFID access system on Arduino using Mifare 1k chips and MFRC522. Pentesting with the Proxmark3.</p>
   </header>
 
   <article>
-    <div class="publications">
-
-
-  <h2 class="year">2022</h2>
-  <ol class="bibliography">
-<li>
-<div class="row">
-  <div class="col-sm-2 abbr">
-  
-  </div>
-
-  <div id="Plantey:2022gwj" class="col-sm-8">
-    
-      <div class="title">Light scalars in the Weinberg 3HDM potential with spontaneous CP violation</div>
-      <div class="author">
-        
-          
-          
-          
-          
-          
-          
-            
-              
-                <em>Plantey, R.</em>,
-              
-            
-          
-        
-          
-          
-          
-          
-          
-          
-            
-              
-                
-                  Ogreid, O. M.,
-                
-              
-            
-          
-        
-          
-          
-          
-          
-          
-          
-            
-              
-                
-                  Osland, P.,
-                
-              
-            
-          
-        
-          
-          
-          
-          
-          
-          
-            
-              
-                
-                  Rebelo, M. N.,
-                
-              
-            
-          
-        
-          
-          
-          
-          
-          
-          
-            
-              
-                
-                  and Solberg, M. Aa.
-                
-              
-            
-          
-        
-      </div>
-
-      <div class="periodical">
-      
-        <em></em>
-      
-      
-        Sep
-      
-      
-        2022
-      
-      </div>
-    
-
-    <div class="links">
-    
-    
-      <a href="http://arxiv.org/abs/2209.06499" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">arXiv</a>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    </div>
-
-    <!-- Hidden abstract block -->
-    
-
-    <!-- Hidden bibtex block -->
-    
-  </div>
-</div>
-</li>
-<li>
-<div class="row">
-  <div class="col-sm-2 abbr">
-  
-  </div>
-
-  <div id="Plantey:2022jdg" class="col-sm-8">
-    
-      <div class="title">Weinberg’s 3HDM potential with spontaneous CP violation</div>
-      <div class="author">
-        
-          
-          
-          
-          
-          
-          
-            
-              
-                <em>Plantey, R.</em>,
-              
-            
-          
-        
-          
-          
-          
-          
-          
-          
-            
-              
-                
-                  Ogreid, O. M.,
-                
-              
-            
-          
-        
-          
-          
-          
-          
-          
-          
-            
-              
-                
-                  Osland, P.,
-                
-              
-            
-          
-        
-          
-          
-          
-          
-          
-          
-            
-              
-                
-                  Rebelo, M. N.,
-                
-              
-            
-          
-        
-          
-          
-          
-          
-          
-          
-            
-              
-                
-                  and Solberg, M. Aa.
-                
-              
-            
-          
-        
-      </div>
-
-      <div class="periodical">
-      
-        <em></em>
-      
-      
-        Aug
-      
-      
-        2022
-      
-      </div>
-    
-
-    <div class="links">
-    
-    
-      <a href="http://arxiv.org/abs/2208.13594" class="btn btn-sm z-depth-0" role="button" target="_blank" rel="noopener noreferrer">arXiv</a>
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    </div>
-
-    <!-- Hidden abstract block -->
-    
-
-    <!-- Hidden bibtex block -->
-    
-  </div>
-</div>
-</li>
-</ol>
-
-
-</div>
-
-<h2 id="degree-projects">Degree projects</h2>
+    <p>Radio Frequency IDentification (RFID) is ubiquitous in our daily lives: hotel and smart lock keys, access cards, 
+public transport tickets, etc. Most likely you can find one such chip, in some form or other, in your immediate 
+surroundings. And so I became curious</p>
 
 <ul>
-  <li><a href="/assets/pdf/internship-report-2020.pdf">Entanglement Entropies in 1+1d critical systems (research internship, 2020)</a></li>
-  <li><a href="http://lup.lub.lu.se/student-papers/record/8986051/file/8986075.pdf" target="_blank" rel="noopener noreferrer">RGE analysis of the Froggatt-Nielsen mechanism in 2HDMs (master thesis, 2019)</a></li>
+  <li><strong>How secure are typical RFID access systems?</strong></li>
 </ul>
+
+<p>Spoiler alert: They’re not very secure at all and vulnerable to even hackers on a budget.</p>
+
+<p>Let’s talk a little about the technology itself</p>
+
+<h3 id="125-khz"><strong>125 kHz</strong></h3>
+
+<h3 id="1356-mhz"><strong>13.56 MHz</strong></h3>
+
+<h2 id="mifare-classic"><strong>Mifare classic</strong></h2>
+
+<h2 id="the-proxmark3"><strong>The Proxmark3</strong></h2>
+
+<h1 id="making-a-more-secure-rfid-access-system-with-mifare-1k"><strong>Making a more secure RFID access system with Mifare 1k</strong></h1>
+
+<p>Having learned from my research and experiments on the Mifare classic 1k, I set out to make a more secure RFID 
+access system than the ones I’ve encountered. To do so I used</p>
+
+<h3 id="hardware"><strong>Hardware</strong></h3>
+
+<ul>
+  <li>Arduino Uno</li>
+  <li>MFRC522 module (or other 13.56MHz RFID reader/writer)</li>
+</ul>
+
+<h3 id="software"><strong>Software</strong></h3>
+
+<ul>
+  <li>Arduino library MFRC522</li>
+</ul>
+
+<p>To make things more fun I also used</p>
+
+<ul>
+  <li>LCD screen (with Arduino library …)</li>
+  <li>Buzzer (with Arduino library …)</li>
+</ul>
+
+<p>but these are not strictly necessary, and you can just output to the Arduino serial.</p>
+
+<h2 id="schematics"><strong>Schematics</strong></h2>
+
+<p>……….</p>
+
+<h2 id="code"><strong>Code</strong></h2>
+
+<p>Here is what I want my reader to do:</p>
+<ul>
+  <li>Check if the tag is block 0 writable, if so deny access</li>
+  <li>Read the UID</li>
+  <li>If the UID is not registered, deny access.</li>
+  <li>If the UID is registered, proceed to read data blocks (containing e.g. a second UID) using a key stored on the 
+reader.</li>
+  <li>If the data blocks are correct, grant access otherwise deny access.</li>
+</ul>
+
+<p>In addition all sectors of registered tags should be read/write protected by a custom key <em>even if they are empty</em>! 
+Otherwise it 
+is trivial to recover all the keys using the nested attacks implemented on the Proxmark3. Even then, 
+there are attacks (e.g. darkside) which do not require the knowledge of any key but they may not work if the PRNG of 
+the chip is strong enough.</p>
+
+<h2 id="testing-with-the-proxmark3"><strong>Testing with the Proxmark3</strong></h2>
 
   </article>
 
