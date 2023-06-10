@@ -18,4 +18,4 @@ I am currently a PhD candidate in theoretical physics at the Norwegian Universit
 [theoretical desription of elementary particles](/research/), I enjoy writing [cool Python programs](/projects/).
 
 Abstract, technical and mind-bending are keywords which tend to describe my interests. I am a linux evangelist, avid chess player and wanna-be shred guitarist 
-interested in blockchain technology, cyber security and philosophy.
+interested in blockchain technology and cybersecurity.

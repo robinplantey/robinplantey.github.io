@@ -93,7 +93,7 @@ but these are not strictly necessary, you could just output to serial. These com
 
 Below is a possible wiring between the arduino board and the other components.
 
-![Arduino RFID reader wiring](/assets/img/rfid-reader1.png)
+![Arduino RFID reader wiring](/assets/img/rfid-reader.png)
 
 Note: The potentiometer controlling the contrast of the LCD display is not shown.
 
