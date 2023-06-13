@@ -9,9 +9,9 @@ category: fun
 
 ![Proxmark3 running Iceman Firmware](/assets/img/rfid.jpg)
 
-Radio Frequency IDentification (RFID) is very a common solution for access cards, 
+Radio Frequency IDentification (RFID) is a very common solution for access cards, 
 public transport tickets, etc. Most likely you can find one such chip, in some form or other, in your immediate 
-surroundings. This made me curious about the workings of such access systems and their security.
+surroundings. This made me curious about the inner workings of such access systems and their security.
 
 **How secure are typical RFID access systems?**
 
