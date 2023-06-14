@@ -103,4 +103,5 @@ The [code](https://github.com/robinplantey/mifare1k-reader) is available on gith
 
 # **Conclusion**
 
-The mifare classic 1k has been completely reverse-engineered and efficient attacks against it exist, some of which are conviniently implemented in devices like the proxmark3. Access systems based on this chip should therefore not be considered secure. However it is possible to dramatically improve the security of such access systems by introducing a token in the data blocks and having custom keys for **all** the 16 sectors. This is a simple and efficient improvement compared to UID-only access systems which makes it a lot harder for a budget hacker to clone a card.
+The mifare classic 1k has been completely reverse-engineered and efficient attacks against it exist, some of which 
+are conveniently implemented in devices like the proxmark3. Access systems based on this chip should therefore not be considered secure. However it is possible to dramatically improve the security of such access systems by introducing a token in the data blocks and having custom keys for **all** the 16 sectors. This is a simple and efficient improvement compared to UID-only access systems which makes it a lot harder for a budget hacker to clone a card.
