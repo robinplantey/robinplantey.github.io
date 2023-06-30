@@ -3,7 +3,7 @@ layout: about
 title: About
 permalink: /
 description: Welcome to my personal webpage! I'm Robin Plantey, theoretical physics PhD candidate, learning junkie and passionate about all things technical. 
-nav: true
+nav: 
 profile:
   align: right
 #  image: prof_pic.jpg
