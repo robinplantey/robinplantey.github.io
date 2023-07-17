@@ -72,7 +72,7 @@ pub_key: https://keys.openpgp.org/vks/v1/by-fingerprint/878F62D1837F77ED18C299E5
 rss_icon: false
 
 contact_note: >
-  Feel free to get in touch with me!
+  Encrypted mail is cool.
 
 google_analytics: UA-XXXXXXXXX # out your google-analytics code
 panelbear_analytics: XXXXXXXXX # panelbear analytics site ID
@@ -90,7 +90,7 @@ pagination:
   enabled: true
 
 # Comments
-disqus_shortname: al-folio # put your disqus shortname
+#disqus_shortname: al-folio # put your disqus shortname
 # https://help.disqus.com/en/articles/1717111-what-s-a-shortname
 
 # -----------------------------------------------------------------------------

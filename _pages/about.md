@@ -15,7 +15,7 @@ social: true  # includes social icons at the bottom of the page
 ---
 
 I am currently a PhD candidate in theoretical physics at the Norwegian University of Science and Technology (NTNU). When I'm not busy trying to improve our 
-[theoretical desription of elementary particles](/research/), I enjoy writing [cool Python programs](/projects/).
+[theoretical desription of elementary particles](/research/), I write [fun, sometimes useful, programs](/projects/).
 
 Abstract, technical and mind-bending are keywords which tend to describe my interests. I am a linux evangelist, avid chess player and wanna-be shred guitarist 
-interested in blockchain technology and cybersecurity.
+interested in blockchain technology and cybersecurity. Feel free to get in touch!
