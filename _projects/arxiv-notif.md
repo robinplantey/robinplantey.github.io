@@ -2,8 +2,10 @@
 layout: page
 title: Arxiv alerts
 description: A little Python program that allows you to follow authors on arXiv and receive desktop notifications when they submit articles
+github: https://github.com/robinplantey/ArxivAlerts
+lang: Python
 img: /assets/img/arxiv-logo-1.png
-importance: 1
+importance: 2
 category: fun
 ---
 

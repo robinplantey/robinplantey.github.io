@@ -2,8 +2,9 @@
 layout: page
 title: Conformal mappings
 description: A short bit of code to visualize 2d conformal deformations
+lang: Python
 img: assets/img/conformal-maps.png
-importance: 2
+importance: 3
 category: fun
 ---
 
