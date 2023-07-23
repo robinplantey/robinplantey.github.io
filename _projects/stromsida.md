@@ -4,14 +4,11 @@ title: Strømsida
 description: A locally hosted web dashboard for visualizing electricity spot price data
 lang: Python | Django
 img: /assets/img/stromsida.png
+banner: /assets/img/vannkraft.jpg
+banner_caption: "Photo: Jon Hauge / Aftenposten"
 importance: 1
 category: fun
 ---
-
-|![](/assets/img/vannkraft.jpg)|
-|--:|
-|Photo: Jon Hauge / Aftenposten|
-
  
 
 The electricity spot price fluctuates quite a lot, at least here in Norway: sometimes by more than 50% intraday. Once in a while the price can even be null or slightly negative! To take advantage of these large fluctuations I wrote [Strømsida](demo), a dashboard which integrates current hourly price data into a pretty webpage. A webpage is perfectly suited for this type of application as it is more portable and, I would argue, easier to code than a GUI. By hosting this little website on my local network everyone in my household can be smart with their electricity usage. 

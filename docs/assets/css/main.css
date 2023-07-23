@@ -574,6 +574,20 @@ html.transition *:after {
   padding-top: 0.25rem;
 }
 
+div.post-banner {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 95%;
+}
+div.post-banner img {
+  max-width: 100%;
+}
+div.post-banner p.caption {
+  text-align: right;
+  font-size: 75%;
+}
+
 /*******************************************************************************
  * Style overrides for distill blog posts.
  ******************************************************************************/

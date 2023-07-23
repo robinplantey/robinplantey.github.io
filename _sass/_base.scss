@@ -381,6 +381,10 @@ footer.sticky-bottom {
 }
 
 
+// Posts
+
+
+
 // Publications
 
 .publications {
@@ -568,3 +572,20 @@ html.transition *:after {
   font-size: 0.875rem;
   padding-top: 0.25rem;
 }
+
+div.post-banner {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 95%;
+  
+  img {
+    max-width: 100%;
+  }
+
+  p.caption {
+    text-align: right;
+    font-size: 75%;
+  }
+}
+

@@ -5,11 +5,13 @@ description: Attempting to make a secure RFID access system on Arduino using Mif
 github: https://github.com/robinplantey/mifare1k-reader
 lang: C++ | Arduino
 img: assets/img/rfid.jpg
+banner: /assets/img/rfid.jpg
+banner_caption:  
 importance: 0
 category: fun
 ---
 
-![Proxmark3 running Iceman Firmware](/assets/img/rfid.jpg)
+<!-- ![Proxmark3 running Iceman Firmware](/assets/img/rfid.jpg) -->
 
 Radio Frequency IDentification (RFID) is a very common solution for access cards, 
 public transport tickets, etc. Most likely you can find one such chip, in some form or other, in your immediate 
