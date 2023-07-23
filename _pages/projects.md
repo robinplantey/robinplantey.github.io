@@ -2,9 +2,9 @@
 layout: page
 title: Projects
 permalink: /projects/
-description: Here you can find some of my programming projects
+description: Here you can find some of my coding side-projects
 nav: true
-display_categories: [work, fun]
+display_categories: #[work, fun]
 horizontal: false
 ---
 

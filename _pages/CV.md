@@ -4,7 +4,6 @@ title: Robin Plantey
 permalink: /cv/
 description: 
 nav: false
-display_categories: [work]
 horizontal: false
 --- 
 
