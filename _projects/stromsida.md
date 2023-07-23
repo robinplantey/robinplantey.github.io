@@ -25,7 +25,7 @@ The base layer retrieves hourly price time series from an [API](https://www.hvak
 
 #### Web framework: Django
 
-Being a Python-person I used [Django](https://www.djangoproject.com/start/overview/) as web framework. It is well-documented and pretty intuitive which makes it easy to learn. Conceptually it consists of *views*, python functions whicho return data to fill html templates. A view is bound to a url and a template. Whenever a url is requested, the server calls the corresponding view and serves the corresponding template filled with the result of the view. It's als pretty easy to set up cache so that the server doesn't need to unnecessarily repeat operations. There's obviously a lot more to Django, like databases, but that's all I needed for this project. 
+Being a Python-person I used [Django](https://www.djangoproject.com/start/overview/) as web framework. It is well-documented and pretty intuitive which makes it easy to learn. Conceptually it consists of *views*, python functions which return data to fill html templates. A view is bound to a url and a template. Whenever a url is requested, the server calls the corresponding view and serves the corresponding template filled with the result of the view. It's also pretty easy to set up cache so that the server doesn't need to unnecessarily repeat operations. There's obviously a lot more to Django but that's really all I needed for this project. 
 
 I definitely recommend this web framework if, like me, you want to turn your Python application into a website. 
 
