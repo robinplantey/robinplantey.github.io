@@ -18,7 +18,7 @@ publications since ArXiv doesn't have a way to follow individual authors.
 For each author in your subscription list, the program does a search on arxiv, parses the results and retrieves information related to any new publications, if 
 there are any since the last check. If there are new articles, it prepares a summary that you can open via a desktop notification. 
 
-| ![Example of a pretty summary of new publications](/assets/img/arxivalerts.png) |
+| ![Example of a pretty summary of new publications](/assets/img/arxivalerts.png){: class="inline-image"} |
 |:--:|
 | <b>Example of a pretty summary of new publications</b>|
 

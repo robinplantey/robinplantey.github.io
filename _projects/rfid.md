@@ -11,8 +11,6 @@ importance: 0
 category: fun
 ---
 
-<!-- ![Proxmark3 running Iceman Firmware](/assets/img/rfid.jpg) -->
-
 Radio Frequency IDentification (RFID) is a very common solution for access cards, 
 public transport tickets, etc. Most likely you can find one such chip, in some form or other, in your immediate 
 surroundings. This made me curious about the inner workings of such access systems and their security.
@@ -27,7 +25,7 @@ There are two main frequencies used for RFID: 125kHz and 13.56MHz. The most comm
 
 The Mifare classic is used a lot in access cards and is definitely the most commonly encountered RFID chip. It comes in two sizes 1kB and 4kB with the former being most common in my experience. The memory layout of the classic 1k is divided in 16 sectors with 4 blocks each.
 
-![Memory layout of the mifare classic 1k](/assets/img/mfclassic1k.png)
+![Memory layout of the mifare classic 1k](/assets/img/mfclassic1k.png){: class="inline-image"}
 
 All sectors have the same structure with three data blocks and a trailer block, all 16 bytes long. The trailer block contains two 48-bits keys for read/write authentication, 3-byte for access conditions and 1 extra data byte. The access conditions specify which keys are to be used for read/write/increment/decrement operations among other things. See the official [mifare classic datasheet](https://www.nxp.com/docs/en/data-sheet/MF1S50YYX_V1.pdf) for more details on access conditions, authentication and commands.
 
@@ -46,7 +44,7 @@ Block 0 of sector 0, the manufacturer block, starts with a 4-byte (or 7-byte) UI
 
 This device is the RFID swiss army knife. Initially developped for research, the hardware and software has been continuously improved by a community of security researchers and enthusiasts. While the official proxmark3 is relatively expensive, there exists a chinese version, so-called "proxmark3 easy", which is a lot cheaper and, for most purposes, just as functional. In particular it can run the famous nested and hardnested attacks on Mifare classic chips. Equipped with the [ICEMAN firmware](https://github.com/RfidResearchGroup/proxmark3), the proxmark3 easy is an affordable, powerful and I dare say user-friendly RFID pentesting tool.
 
-![Proxmark3 running Iceman Firmware](/assets/img/pm3.png)
+![Proxmark3 running Iceman Firmware](/assets/img/pm3.png){: class="inline-image"}
 
 ## **The MCT Android app**
 
@@ -97,7 +95,7 @@ but these are not strictly necessary, you could just output to serial. These com
 
 Below is a possible wiring between the arduino board and the other components.
 
-![Arduino RFID reader wiring](/assets/img/rfid-reader.png)
+![Arduino RFID reader wiring](/assets/img/rfid-reader.png){: class="inline-image"}
 
 Note: The potentiometer controlling the contrast of the LCD display is not shown.
 
