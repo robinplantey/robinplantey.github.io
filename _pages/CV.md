@@ -11,7 +11,7 @@ horizontal: false
 
 - **2021-**     : PhD candidate, Norwegian University of Science and Technology 
 - **2019-2020** : High Energy Physics MSc, École Polytechnique
-- **2017-2019** : Theortical Physics MSc, Lund University
+- **2017-2019** : Theoretical Physics MSc, Lund University
 - **2014-2017** : Theoretical Physics BSc, Montpellier University
 
 ## Conferences and Summer Schools

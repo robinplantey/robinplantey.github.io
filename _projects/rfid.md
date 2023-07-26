@@ -42,7 +42,7 @@ Block 0 of sector 0, the manufacturer block, starts with a 4-byte (or 7-byte) UI
 
 ## **The Proxmark3**
 
-This device is the RFID swiss army knife. Initially developped for research, the hardware and software has been continuously improved by a community of security researchers and enthusiasts. While the official proxmark3 is relatively expensive, there exists a chinese version, so-called "proxmark3 easy", which is a lot cheaper and, for most purposes, just as functional. In particular it can run the famous nested and hardnested attacks on Mifare classic chips. Equipped with the [ICEMAN firmware](https://github.com/RfidResearchGroup/proxmark3), the proxmark3 easy is an affordable, powerful and I dare say user-friendly RFID pentesting tool.
+This device is the RFID swiss army knife. Initially developed for research, the hardware and software has been continuously improved by a community of security researchers and enthusiasts. While the official proxmark3 is relatively expensive, there exists a chinese version, so-called "proxmark3 easy", which is a lot cheaper and, for most purposes, just as functional. In particular it can run the famous nested and hardnested attacks on Mifare classic chips. Equipped with the [ICEMAN firmware](https://github.com/RfidResearchGroup/proxmark3), the proxmark3 easy is an affordable, powerful and I dare say user-friendly RFID pentesting tool.
 
 ![Proxmark3 running Iceman Firmware](/assets/img/pm3.png){: class="inline-image"}
 
@@ -81,7 +81,7 @@ In order to produce nicer output when access is granted/denied I also used
 - LCD screen 
 - Passive buzzer
 
-but these are not strictly necessary, you could just output to serial. These components were used with the following arduino libraries:
+but these are not strictly necessary, you could just output to serial. These components were used with the following Arduino libraries:
 
 - [MFRC522](https://github.com/miguelbalboa/rfid)
 - [LiquidCrystal](https://github.com/arduino-libraries/LiquidCrystal)
@@ -93,7 +93,7 @@ but these are not strictly necessary, you could just output to serial. These com
 
 ## **Schematics**
 
-Below is a possible wiring between the arduino board and the other components.
+Below is a possible wiring between the Arduino board and the other components.
 
 ![Arduino RFID reader wiring](/assets/img/rfid-reader.png){: class="inline-image"}
 

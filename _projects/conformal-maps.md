@@ -12,7 +12,7 @@ category: fun
 
 ## What is a conformal transformation?
 
-Suppose you wanted to draw a map of the earth on a sheet of paper. Doing so necessarily introduces distorsions in distances and shapes. Conformal 
+Suppose you wanted to draw a map of the earth on a sheet of paper. Doing so necessarily introduces distortions in distances and shapes. Conformal 
 transformations are mappings that locally preserve angles (and therefore shapes) but not necessarily distances. They are relevant in cartography because they 
 preserve directional information.  
 
