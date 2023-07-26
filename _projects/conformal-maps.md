@@ -47,7 +47,7 @@ This is not the only one but it's pretty simple and it looks good when animated.
 
 The following code creates an animation showing this deformation using the animation library from matplotlib. 
 
-{% highlight python %}
+<pre><code class="language-python">
 import numpy as np
 import matplotlib.pyplot as plt
 from matplotlib.animation import FuncAnimation
@@ -102,7 +102,7 @@ def animate(i):                       #function which evolves the grid of one ti
 anim = FuncAnimation(fig, animate, init_func=init,
                                frames=41, interval=100, blit=True)
 anim.save('conformal-deformation.gif', writer='imagemagick')
-{% endhighlight %}
+</code></pre>
 
 ### Output:
 
