@@ -23,11 +23,15 @@
           </div>
           {% endif %}
           </div>
-          <div class="project-lang">
           {% if project.lang %}
-          <p class="card-text project-lang"> {{ project.lang }} </p>
-          {% endif %}
+          <div class="project-lang">
+            <p class="card-text project-lang"> 
+            {% for l in  project.lang %}
+              {{ l }} {% unless forloop.last %} | {% endunless %}
+            {% endfor %}
+            </p>
           </div>
+          {% endif %}
         </div>
       </div>
     </div>

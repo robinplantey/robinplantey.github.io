@@ -244,7 +244,7 @@ html.transition, html.transition *, html.transition *:before, html.transition *:
 
 .post-tags { color: var(--global-text-color-light); font-size: 0.875rem; padding-top: 0.25rem; }
 
-div.post-banner { display: block; margin-right: auto; margin-left: auto; width: 95%; }
+div.post-banner { display: block; margin-right: auto; margin-left: auto; width: 95%; margin-bottom: 24px; }
 
 div.post-banner img { max-width: 100%; }
 
@@ -252,7 +252,7 @@ div.post-banner p.caption { text-align: right; font-size: 75%; }
 
 img.inline-image { display: block; margin-right: auto; margin-left: auto; max-width: 100%; }
 
-iframe.preview { width: 100%; height: 100%; border-right-style: None; border-left-style: None; border-bottom-style: None; }
+iframe.preview { width: 100%; border-right-style: None; border-left-style: None; border-bottom-style: None; }
 
 /******************************************************************************* Style overrides for distill blog posts. */
 d-byline { border-top-color: var(--global-divider-color) !important; }

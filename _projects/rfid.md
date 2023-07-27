@@ -3,7 +3,7 @@ layout: page
 title: Arduino RFID reader
 description: Attempting to make a secure RFID access system on Arduino using Mifare 1k chips and MFRC522.
 github: https://github.com/robinplantey/mifare1k-reader
-lang: C++ | Arduino
+lang: [C++, Arduino]
 img: assets/img/rfid.jpg
 banner: /assets/img/rfid.jpg
 banner_caption:  

@@ -2,7 +2,7 @@
 layout: page
 title: Strømsida
 description: A locally hosted web dashboard for visualizing electricity spot price data
-lang: Python | Django
+lang: [Python, Django]
 img: /assets/img/stromsida.png
 banner: /assets/img/vannkraft.jpg
 banner_caption: "Photo: Jon Hauge / Aftenposten"

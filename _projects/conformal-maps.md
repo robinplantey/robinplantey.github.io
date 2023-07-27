@@ -2,13 +2,12 @@
 layout: page
 title: Conformal mappings
 description: A short bit of code to visualize 2d conformal deformations
-lang: Python
+lang: [Python]
+banner: /assets/img/conformal-deformation.gif
 img: assets/img/conformal-maps.png
 importance: 3
 category: fun
 ---
-
-![conformal transformation of a square into a cylinder](/assets/img/conformal-deformation.gif)
 
 ## What is a conformal transformation?
 
@@ -106,4 +105,4 @@ anim.save('conformal-deformation.gif', writer='imagemagick')
 
 ### Output:
 
-![conformal transformation of a flat sheet into a cylinder](/assets/img/conformal-deformation.gif)
+![conformal transformation of a flat sheet into a cylinder](/assets/img/conformal-deformation.gif){: class="inline-image"}
