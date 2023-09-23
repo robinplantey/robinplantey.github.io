@@ -6,7 +6,7 @@ description: Welcome to my personal webpage! I'm Robin Plantey, theoretical phys
 nav: 
 profile:
   align: right
-#  image: prof_pic.jpg
+  image: prof_pic.jpg
 #  address: 
 
 news: false  # includes a list of news items
