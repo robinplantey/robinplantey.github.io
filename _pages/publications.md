@@ -16,6 +16,9 @@ nav: true
 
 </div>
 
+## PhD thesis
+* [Entanglement Entropies in 1+1d critical systems (research internship, 2020)](/assets/pdf/internship-report-2020.pdf)
+
 ## Degree projects
 
 * [Entanglement Entropies in 1+1d critical systems (research internship, 2020)](/assets/pdf/internship-report-2020.pdf)
