@@ -17,7 +17,7 @@ nav: true
 </div>
 
 ## PhD thesis
-* [Entanglement Entropies in 1+1d critical systems (research internship, 2020)](/assets/pdf/internship-report-2020.pdf)
+* [Analysis techniques for symmetries of multi-Higgs-doublet potentials (2024)](/assets/pdf/thesis-digital.pdf)
 
 ## Degree projects
 
